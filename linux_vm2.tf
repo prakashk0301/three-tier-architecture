@@ -1,8 +1,8 @@
 resource "aws_instance" "linux_vm2" {
     ami                         = "${var.aws_ami}"
-    availability_zone           = "eu-central-1b"
+    availability_zone           = "${var.aws_subnet2}"
     ebs_optimized               = false
-    instance_type               = "t2.micro"
+    instance_type               = "${var.instance_type}"
     monitoring                  = false
     key_name                    = "${var.aws_key}"
     subnet_id                   = "${var.aws_subnet2}"
