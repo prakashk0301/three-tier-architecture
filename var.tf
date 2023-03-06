@@ -27,3 +27,8 @@ variable "aws_key" {
      description = "instance_type"
      default = "t2.micro"
 }
+
+ variable "instance_class" {
+     description = "instance_class"
+     default = "db.t2.micro"
+}
