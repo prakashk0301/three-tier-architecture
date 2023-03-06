@@ -28,4 +28,3 @@ resource "aws_security_group_rule" "allow-egress" {
         cidr_blocks = ["0.0.0.0/0"]
         security_group_id = "${aws_security_group.sec-grp.id}"
 }
-
